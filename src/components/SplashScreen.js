@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../styles/SplashScreen.css';
-import moonImg from '../assets/moon.jpg';
-import eggImg from '../assets/eggImg.png'; // Imagem do ovo de Páscoa
+import presenteImg from '../assets/presente.png';
+import eggImg from '../assets/eggImg.png';
 
 function SplashScreen() {
   const navigate = useNavigate();
@@ -18,12 +18,22 @@ function SplashScreen() {
 
   return (
     <div 
-      className="splash-container" 
-      style={{ backgroundImage: `url(${moonImg})` }}
+        className="splash-container" 
+        style={{
+            backgroundImage: `url(${presenteImg})`,
+            backgroundSize: 'contain',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            width: '100%',
+            height: '100vh'
+        }}
     >
       <h1>
         <span className="blinking">Você foi sorteada a ganhar um presente de Páscoa!</span>
       </h1>
+      <p className="chocolate-note">
+        Ah, e tem mais... Um chocolate ainda será entregue para você em breve 🍫✨
+      </p>
       <button onClick={handleClick} disabled={animate}>
         Abrir meu presente
       </button>

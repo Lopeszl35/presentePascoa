@@ -119,5 +119,47 @@
     color: #ddd;
   }
 
+  @media (max-width: 768px) {
+    .vouchers-container {
+      padding: 1.5rem 1rem;
+      background-size: cover;
+      background-position: center;
+    }
   
+    .vouchers-container h2 {
+      font-size: 1.5rem;
+      padding: 0 1rem;
+    }
+  
+    .vouchers-grid {
+      flex-direction: column;
+      gap: 1.5rem;
+      align-items: center;
+    }
+  
+    .voucher-card {
+      width: 90%;
+      max-width: 320px;
+      padding: 1.2rem 1rem;
+      font-size: 0.95rem;
+    }
+  
+    .voucher-card h3 {
+      font-size: 1.2rem;
+    }
+  
+    .voucher-card p {
+      font-size: 0.95rem;
+    }
+  
+    .ticket-left,
+    .ticket-right {
+      width: 16px;
+    }
+  
+    .voucher-card::before,
+    .voucher-card::after {
+      font-size: 1rem;
+    }
+  }
   

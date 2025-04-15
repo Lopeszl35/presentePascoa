@@ -7,6 +7,7 @@
     height: 100vh;
     background-size: cover;
     background-position: center;
+    background-color: #1e90ff;
     color: white;
     text-align: center;
     overflow: hidden;
@@ -70,7 +71,6 @@
     100% { transform: scale(0); opacity: 0; }
   }
   
-  /* Confetes reais em múltiplos elementos */
   .confetti-wrapper {
     position: absolute;
     top: 0;
@@ -110,4 +110,57 @@
       opacity: 0;
     }
   }
+
+  .chocolate-note {
+    font-size: 1.1rem;
+    color: #ffcb6b;
+    margin-top: -0.5rem;
+    margin-bottom: 2rem;
+    font-style: italic;
+    animation: fadeIn 2s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+
+  @media (max-width: 768px) {
+    .splash-container {
+      padding: 1rem;
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      justify-content: flex-start;
+    }
+  
+    .splash-container h1 {
+      font-size: 1.5rem;
+      margin-top: 3rem;
+      padding: 0 1rem;
+    }
+  
+    .chocolate-note {
+      font-size: 0.95rem;
+      margin-top: 1rem;
+      margin-bottom: 1.5rem;
+      padding: 0 1.5rem;
+    }
+  
+    .splash-container button {
+      font-size: 0.9rem;
+      padding: 0.6rem 1.2rem;
+    }
+  
+    .egg-animation {
+      width: 90px;
+    }
+  
+    .confetti {
+      width: 8px;
+      height: 8px;
+    }
+  }
+  
   

@@ -1,6 +1,7 @@
+// src/pages/Vouchers.js
 import React from 'react';
 import '../styles/Vouchers.css';
-import coelhoImg from '../assets/coelho.png'; // Imagem de fundo
+import coelhoImg from '../assets/coelho.png';
 
 const vouchers = [
   { title: 'Vale um abraço', description: 'Pode ser resgatado quando bater saudade.' },
@@ -27,6 +28,8 @@ function Vouchers() {
             className="voucher-card"
             onClick={() => handleShare(voucher)}
           >
+            <div className="ticket-left"></div>
+            <div className="ticket-right"></div>
             <h3>{voucher.title}</h3>
             <p>{voucher.description}</p>
           </div>

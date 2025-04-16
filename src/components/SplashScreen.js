@@ -34,6 +34,7 @@ function SplashScreen() {
       <p className="chocolate-note">
         Ah, e tem mais... Um chocolate ainda será entregue para você em breve 🍫✨
       </p>
+      <h2 className="chocolate-note"> Feliz Páscoa! </h2>
       <button onClick={handleClick} disabled={animate}>
         Abrir meu presente
       </button>

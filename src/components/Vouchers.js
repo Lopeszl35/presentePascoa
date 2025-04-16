@@ -4,11 +4,16 @@ import '../styles/Vouchers.css';
 import coelhoImg from '../assets/coelho.png';
 
 const vouchers = [
-  { title: 'Vale um abraço', description: 'Pode ser resgatado quando bater saudade.' },
+  { title: 'Vale um abraço', description: 'Pode ser resgatado quando precisar de um abraço.' },
   { title: 'Vale um chamego', description: 'Pra um momento de carinho sem hora marcada.' },
   { title: 'Vale se ver agora', description: 'É só mandar mensagem e usar sem pensar duas vezes.' },
   { title: 'Vale uma noite onde você quiser', description: 'A noite é sua pra escolher o destino.' },
-  { title: 'Vale uma confidência', description: 'Pode me perguntar qualquer coisa que eu respondo de verdade.' },
+  { title: 'Vale uma rodada de perguntas', description: 'Pode me perguntar qualquer coisa que eu respondo de verdade.' },
+  { title: 'Vale uma massagem', description: 'Pra relaxar e esquecer do mundo.' },
+  { title: 'Vale um "Faça minha vontade hoje" ', description: 'Desde de que não envolva pular de paraquedas.' },
+  { title: 'Vale uma comida feita por mim(sem garantias de qualidade)', description: 'Mas prometo esforço.' },
+  { title: 'Vale uma noite da preguiça', description: 'Pode ser série, filme, travesseiro e silencio confortavel.' },
+
 ];
 
 function Vouchers() {
